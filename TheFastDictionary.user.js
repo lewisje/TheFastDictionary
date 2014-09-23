@@ -9,6 +9,11 @@
 // @include http://*.thefreedictionary.com/*
 // @include https://thefreedictionary.com/*
 // @include https://*.thefreedictionary.com/*
+// @include http://thefreelibrary.com/*
+// @include http://*.thefreelibrary.com/*
+// @include https://thefreelibrary.com/*
+// @include https://*.thefreelibrary.com/*
 // @run-at document-end
 // ==/UserScript==
-document.body.onload = null;
+if (document.body.onload && typeof dictionary === 'function') document.body.onload = dictionary;
+else document.body.onload = null;
