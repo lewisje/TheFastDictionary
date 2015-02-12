@@ -15,7 +15,7 @@
 // @include https://*.thefreelibrary.com/*
 // @grant none
 // @run-at document-end
-// @copyright 2014 James Edward Lewis II
+// @copyright 2015 James Edward Lewis II
 // ==/UserScript==
 if (document.body.onload && typeof dictionary === 'function') document.body.onload = dictionary;
 else document.body.onload = null;
